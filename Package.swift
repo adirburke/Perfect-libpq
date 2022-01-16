@@ -26,11 +26,11 @@ let package = Package(
         .library(name: "libpq", targets: ["libpq"]),
     ],
     targets: [
-        .systemLibrary(name: "libpq", pkgConfig: "postgres")
+        .systemLibrary(name: "libpq", pkgConfig: "libpq")
     ]
-//	pkgConfig: "libpq"
+//	pkgConfig: "libpq",
 //	providers: [
-//	           	.brew(["libpq"]),
+//	           	.brew(["postgres"]),
 //	           	.apt(["libpq-dev"]),
 //	]
 )
